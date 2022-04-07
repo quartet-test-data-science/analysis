@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "analysis"
+version = "0.1.0"
+description = "Data Science Analysis and Operations"
+license = "Proprietary"
+authors = ["Data Science <datascience@quartethealth.com>"]
+readme = "README.md"
+repository = "https://github.quartethealth.com/data-science/reproducible-research"
+
+[[tool.poetry.source]]
+name = "pypi_"
+url = "https://pypi.org/simple/"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.10"
+jupyter = "^1.0.0"
+psycopg2 = "^2.9.1"
+sqlalchemy-redshift = "^0.8.4"
+sqlalchemy = "^1.4.22"
+matplotlib = "^3.4.2"
+xgboost = "0.90"
+fastparquet = "0.6.3"
+s3fs = "^2021.8.0"
+mistune = "0.8.4"
+shap = "^0.40.0"
+seaborn = "^0.11.2"
+pyyaml = "^6.0"
+ipykernel = "^6.12.1"
+awswrangler = "^2.12.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.0.0"
+dephell = "^0.8.0"
+
+[tool.dephell.main]
+from = {format = "poetry", path = "pyproject.toml"}
+to = {format = "setuppy", path = "setup.py"}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
