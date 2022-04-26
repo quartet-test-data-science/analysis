@@ -4,9 +4,9 @@ A toolbox to perform s3 operations and general exploratory analyses
 
 ## Dependencies
 
-Qml uses poetry. To get started with poetry, issue the command:
+Analysis uses poetry. To get started with poetry, issue the command:
 
-`curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -`
+`curl -skSL https://install.python-poetry.org | /usr/local/bin/python3.8 -`
 
 To create an environment:
 

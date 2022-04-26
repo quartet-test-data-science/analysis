@@ -1,4 +1,4 @@
-PYTHON_EXECUTABLE ?= python3
+PYTHON_EXECUTABLE ?= /usr/local/bin/python3.8
 TOPDIR = $(PWD)
 JUPYTER_PORT ?= ${JUPYTER_PORT:-8888}
 VALID_BUMPS = major minor patch
